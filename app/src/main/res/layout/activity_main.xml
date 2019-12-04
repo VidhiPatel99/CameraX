@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <!--    <androidx.camera.view.CameraView-->
+    <!--        android:id="@+id/view_camera"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:pinchToZoomEnabled="true" />-->
+
+
+    <TextureView
+        android:id="@+id/view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivCameraOptionVideo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_video" />
+
+        <ImageView
+            android:id="@+id/ivCameraOptionImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/selectedMediaBackgroundColor"
+            android:padding="8dp"
+            android:src="@drawable/ic_image" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ibFlash"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/icn_flash_off" />
+
+    <ImageView
+        android:id="@+id/ibCaptureImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/btn_capture" />
+
+    <ImageView
+        android:id="@+id/ibFrontCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/icn_switch_camera" />
+</FrameLayout>
